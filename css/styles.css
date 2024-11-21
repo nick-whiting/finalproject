@@ -1,0 +1,12 @@
+body {
+    background-color: #85a1a3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.styled-image {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
