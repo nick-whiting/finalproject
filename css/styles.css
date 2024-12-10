@@ -1,17 +1,37 @@
 body {
     background-color: #85a1a3;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 1%;
+    color: #161616;
+    font-weight: bold;
     padding: 1%;
 }
 .styled-image {
-    max-width: 60%;
+    max-width: 80%;
     height: auto;
     display: block;
     margin: 20px auto;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 20px;
+h2 {
+    color: #ececec;
+    background-color: #501b1bda;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+h1 {
+    color: #ececec;
+    background-color: #501b1bda;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+p {
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+    font-size: 16px;
+
 }
