@@ -32,33 +32,130 @@
     to GitHub. Finally, you can view that information as a website using
     GitHub Pages by enabling it in the repository settings.</p>
 <h2>Partitioning a Hard Drive for Multiple Distros</h2>
-    <p>this is the part where i installed all the distros, i guess right
-        now ive come to the conclusion that the best thing for me to do is basically write
-       an outline for my website and this process, like with an english essay, huh, 
-   go figgure. so now i am countinuing creating my website over time</p>
-<h2>this is the heading for the 4th part</h2>
-    <p>heres the text for the 4th part</p>
+    <p>Now let's get down to business. In this step we'll be taking a 
+    completely wiped out computer with nothing other than a bios on it,
+    and using each distro's installer, partition a piece of the unused hard
+    drive for each distro to use. In the end we will have four separate
+    operating systems, on one computer. The four Distros I'll be Installing are:</p>
     <ul><li>Linux Mint Cinnimon</li>
-    <li>Fedora</li>
-    <li>openSUCE</li>
-    <li>Linux Mint Xfce </li></ul> 
-<h2>This is the 5th Heading</h2>
-<P>heading 4 text and images</P>
-<h2>This is the 6th Heading</h2>
-    <ul><li>Download the ISO file for the desired Linux distribution.</li>
-    <li>Create a bootable USB drive using tools like Rufus or Etcher.</li>
-    <li>Boot from the USB drive and start the installation process.</li>
-    <li>Follow the on-screen instructions to partition the hard drive.</li>
-    <li>Complete the installation and reboot the system.</li>
-    <li>Repeat the process for each distribution you want to install.</li></ul>
-<h2>This is the 6th Heading</h2>
-<p>i will be using the stock hardware monitors that each distro
-    may provide to see their performance live during my presintation 
-    while using a website for displaying 3d graphics as stress,
-    like at <a href="https://www.wirple.com/bmark/" 
-    target="_blank">Wirple Benchmark</a> 
-    and <a href="https://webglsamples.org/aquarium/aquarium.html" 
-    target="_blank">WebGL Aquarium</a>
-</p>
+        <li>Fedora</li>
+        <li>openSUCE</li>
+        <li>Linux Mint Xfce </li></ul> 
+    <p>The first step to all this is to get each Distro on a mountable medium,
+    this will allow us to boot the computer (using the bios) from that
+    medium and begin our installation process. The medium i used to mount
+    each Distros ISO on was a flash drive; Tho other mediums (like CDs)
+    can obviously be used.</p>
+<h2>Installing The Distros</h2>
+    <p>Now we need to partition our EFI, this is a smaller piece of the harddrive
+    that we will put each distros bootloader on. We can tell all the Distros
+    to share this partition, so we only need to make it once.</p>
+    <img src="assets/images/1.jpg" 
+    alt="Creating the EFI" 
+    title="Creating the EFI" 
+    class="styled-image">
+<p>Once we have our EFI partitioned, we can get started on the long
+    but simple task of installing our distros. First we will put our flash
+    drive into the computer and shut it down. Once we power up our pc into
+    the bios, we can boot up through our flash drive, accessing each
+    Distros Instillation program.</p>
+    <img src="assets/images/2.jpg" 
+    alt="Partitioning the first piece for our first distro to be installed on" 
+    title="Partitioning the first piece for our first distro to be installed on" 
+    class="styled-image">
+    <img src="assets/images/7.jpg" 
+    alt="and finally the last distro" 
+    title="and finally the last distro" 
+    class="styled-image">
+    <p>After partitioning a piece of our drive for the distro to use as
+    its root, we just need to point the distro to where the EFI is so it
+    can install its bootloader there. Once thats all said and done it
+    will begin its instalation process and thats it! Now all thats left
+    is to repeat the process until we have all the distros we would like to
+    have on the PC.</p>
+    <img src="assets/images/8.jpg" 
+    alt="Pointing a distro to our EFI's location" 
+    title="Pointing a distro to our EFI's Location" 
+    class="styled-image">
+    <img src="assets/images/6.jpg" 
+    alt="choosing the type of installation for a specific distro" 
+    title="choosing the type of installation for a specific distro" 
+    class="styled-image">
+    <img src="assets/images/4.jpg" 
+    alt="the final step, that new computer smell, the computer and user settings!" 
+    title="the final step, that new computer smell, the computer and user settings!" 
+    class="styled-image">
+<h2>Accessing the Bootloader</h2>
+<P>If we did everything properly with pointing each distro to our one 
+    EFI partition, we should be able to access each distro when we boot 
+    up our computer, launching the bootloader. in our case, the GRUB
+    <img src="assets/images/11.jpg" 
+    alt="The bootloader, GRUB" 
+    title="The Bootloader, GRUB" 
+    class="styled-image">
+</P>
+<h2>Comparing each Distros Performance using an In-browser Benchmark</h2>
+<p>We will be using the default distros system monitor that each distro
+    provides to compair their performance while running an in-browser
+    benchmark (<a href="https://www.wirple.com/bmark/"target="_blank">Wirple Benchmark</a>)
+    to stress the hardware. I will also be giving a live demo
+    of this process for one of the distributions as my presintation in class.</p>
+    <p>The Results:</p>
+    <p>Linux Mint Cinnamon</p>
+    <img src="assets/images/cinna1.png" 
+    alt="The bootloader, GRUB" 
+    title="The Bootloader, GRUB" 
+    class="styled-image">
+    <img src="assets/images/cinna2.png" 
+    alt="The bootloader, GRUB" 
+    title="The Bootloader, GRUB" 
+    class="styled-image">
+    <p>Fedora</p>
+    <img src="assets/images/fedora1.png" 
+    alt="The bootloader, GRUB" 
+    title="The Bootloader, GRUB" 
+    class="styled-image">
+    <img src="assets/images/fedora2.png" 
+    alt="The bootloader, GRUB" 
+    title="The Bootloader, GRUB" 
+    class="styled-image">
+    <p>OpenSUCE</p>
+    <img src="assets/images/suse1.png" 
+    alt="The bootloader, GRUB" 
+    title="The Bootloader, GRUB" 
+    class="styled-image">
+    <img src="assets/images/suse2.png" 
+    alt="The bootloader, GRUB" 
+    title="The Bootloader, GRUB" 
+    class="styled-image">
+    <p>Linux Mint Xfce</p>
+    <img src="assets/images/xfce1.png" 
+    alt="The bootloader, GRUB" 
+    title="The Bootloader, GRUB" 
+    class="styled-image">
+    <img src="assets/images/xfce2.png" 
+    alt="The bootloader, GRUB" 
+    title="The Bootloader, GRUB" 
+    class="styled-image">
+<h2>Conclusion of test</h2>
+<p>all in all the test goes through 4 diffrent benchmarks to stress the computer</p>
+<ul><li>Increasing Quantity of blocks until FPS drop below 10</li>
+    <li>Rendering Two Spheres</li>
+    <li>Rendering Two Spheres with extra lights, particles shadows, etc.</li>
+    <li>Using lights, particles, opacity, reflections, and antialiasing</li></ul>
+    <p>Once the process is over, the Benchmark Pumps out a score:</p>
+    <ul><li>Linux Mint Cinnimon - 1474</li>
+        <li>Fedora - 641</li>
+        <li>openSUCE - 1222</li>
+        <li>Linux Mint Xfce - 1603</li></ul> 
+        <p>Given the results as well as my own observations during the test,
+            it was clear that both Linux Mint Xfce and OpenSUCE took the
+            longest in the Cube test to drop below 10 FPS. Many factors
+            may have also played a role in the results, like taking a Screenshot
+            needing to be a program that wants to open during each test,
+            clearly affecting the results. In the end, I still believe the lighter
+            weight distros like Linux Mint Xfce and OpenSUCE "felt" the fastest, and
+            the project was a sucess as my old piece of junk laptop actually made it
+            through the experiment.</p>
 </body>
 </html>
